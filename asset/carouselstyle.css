@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    .card-wrapper{
+      max-width: 100%;
+      margin: 0px 0px;
+      padding: 20px, 10px;
+      overflow:hidden;
+    }
+
+
+    .card-list .card-item .card-link{
+      user-select: none;
+      display: block;
+    }
+
+    
+
+    .card-list .card-item .card-link:active{
+      cursor: grabbing;
+    }
+  
+    .card-list .card-link {
+      color: #ffff;  
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin: 16px 0 18px;
+   
+    }
+    
+   .card-body{
+      background: url(./image/Rectangle\ 10217.png);
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      padding: 25px 25px !important;
+      width: 97.5%;
+      
+    } 
+
+    .card-wrapper .swiper-pagination-bullet{
+      height: 13px;
+      width: 13px;
+      opacity: 0.5;
+      background: #2F4F4F;
+      
+    }
+
+    .swiper-pagination{
+      margin-bottom: -35px !important;
+      color: #2F4F4F !important;
+
+    }
+
+    .swiper-pagination-bullet-active{
+      opacity:1;
+      background-color: #2F4F4F !important;
+
+    }
+    .swiper-slide-button{
+      opacity: 0.5;
+      color: #2F4F4F !important;
+    }
+
+    .swiper-slide-button:hover{
+      opacity: 1;
+    }
+
+    .relative{
+      position: relative !important;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+    }
+    .absolute{
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .swiper-button-next {
+      right: -60px !important;
+    }
+    .swiper-button-prev {
+      left: -60px !important;
+    }
+
+
+    .card-wrapper .swiper-slide-button{
+      color: #2F4F4F;
+      margin-top: -35px;
+    }
+
+    @media screen and (max-width: 768px){
+      .card-wrapper{
+        margin: 0 10px 25px;
+      }
+      
+    .card-wrapper .swiper-slide-button{
+      display: none;
+    }
+  }

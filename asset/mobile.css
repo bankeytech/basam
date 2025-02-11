@@ -1,0 +1,95 @@
+/* General responsive rules */
+@media (max-width: 768px) {
+  .R2{
+    margin-top: 70px;
+  }
+
+  .goh {
+    width: 95% !important;
+    transform: translateX(-50%) translateY(-30px) !important;
+  }
+  
+  .R3 {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .R3::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+  
+
+  #about-us {
+    margin-top: 50px !important;
+  }
+
+  .Tit-le {
+    margin-bottom: 2rem;
+  }
+
+  .title h1 {
+    font-size: 1.8rem;
+  }
+
+  .title img {
+    max-width: 150px;
+  }
+
+
+  .ink {
+    padding: 0 15px;
+  }
+
+  .inner-ink p {
+    font-size: 0.9rem !important;
+  }
+
+  .J1{
+    width: 70%;
+  }
+
+  .btn-about {
+    margin: 1rem auto;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .foo{
+    display: none !important;
+  }
+  
+  /* .foo1{
+   display: ;
+  } */
+
+
+}
+
+@media (max-width: 576px) {
+ #footer{
+  display: none !important;
+ }
+
+}
+
+/* 
+@media (max-width: 576px) {
+  #about-us {
+    margin-top: 30px !important;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+  }
+
+  .fs-2 {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+
+  .line {
+    width: 30%;
+  }
+} */
