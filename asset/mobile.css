@@ -5,10 +5,21 @@
   }
 
   .goh {
-    width: 95% !important;
-    transform: translateX(-50%) translateY(-30px) !important;
+    /* width: 95% !important;
+    transform: translateX(-50%) translateY(-30px) !important; */
+    display: none !important;
   }
-  
+
+  .R1 h4{
+    font-size: 35px;
+  }
+  .R1 h3{
+    font-size: 18px;
+  }
+  .R2 h3{
+    font-size: 43px;
+  }
+
   .R3 {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -52,13 +63,24 @@
 
   .btn-about {
     margin: 1rem auto;
-    padding: 8px 20px;
+    padding: 40px 30px !important ;
     font-size: 0.9rem;
   }
   
   .foo{
     display: none !important;
   }
+
+  /* about-us section */
+  .bnn1{
+    display: block !important;
+  }
+
+  .bnn2{
+    display: none !important;
+  }
+
+
   
   /* .foo1{
    display: ;
@@ -67,7 +89,60 @@
 
 }
 
+@media (max-width: 766px) {
+
+    /* project section */
+ .pro{
+  margin-top: 35px !important;
+ }
+
+}
+
 @media (max-width: 576px) {
+  .R2 h3{
+    text-align: center;
+    font-size: 49px;
+  }
+
+  .R2{
+    text-align: center;
+  }
+
+  .bnn1 img, .bnn3 img{
+    width: 280px;
+  }
+
+  .tet{
+    width: 280px;
+  }
+
+  .tet h4{
+    font-size: 18px;
+  }
+
+  
+.img-col {
+  transition:none; /* add transition effect */
+  width: 280px !important;
+  margin-bottom: 25px;
+  
+}
+
+.img-col:hover {
+  transform: none; /* enlarge on hover */
+}
+
+.img-col:not(:hover) {
+  transform: none; /* reduce size when not hovered */
+}
+
+.gnn{
+  justify-content: center !important;
+}
+
+
+ 
+
  #footer{
   display: none !important;
  }

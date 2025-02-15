@@ -119,12 +119,17 @@ html {
   margin-left: 5%;
 }
 
-.R1 h4{
+.R1 h4, .R1 h3{
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
   color: #FFA500;
+}
+
+.R1 h3{
+  font-size: 24px;
+  color: white;
 }
 
 .R2 {
@@ -157,6 +162,14 @@ html {
   height: 2px;
   width: 200px;
 }
+.bnn1{
+  display: none !important;
+}
+
+.bnn2{
+  display: block !important;
+}
+
 @media (max-width: 480px) {
   .line{
     width: 100px;
