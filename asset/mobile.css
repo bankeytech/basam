@@ -1,0 +1,192 @@
+/* General responsive rules */
+@media (max-width: 991px) {
+  .word {
+    padding: 0 15px;
+  }
+  
+  .word p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .word h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .R2 {
+    margin-top: 70px;
+  }
+
+  .goh {
+    /* width: 95% !important;
+    transform: translateX(-50%) translateY(-30px) !important; */
+    display: none !important;
+  }
+
+  .R1 h4 {
+    font-size: 35px;
+  }
+
+  .R1 h3 {
+    font-size: 18px;
+  }
+
+  .R2 h3 {
+    font-size: 43px;
+  }
+
+  .R3 {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .R3::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+  }
+
+
+  #about-us {
+    margin-top: 50px !important;
+  }
+
+  .Tit-le {
+    margin-bottom: 2rem;
+  }
+
+  .title h1 {
+    font-size: 1.8rem;
+  }
+
+  .title img {
+    max-width: 150px;
+  }
+
+
+  .ink {
+    padding: 0 15px;
+  }
+
+  .inner-ink p {
+    font-size: 0.9rem !important;
+  }
+
+  .J1 {
+    width: 70%;
+  }
+
+  .btn-about {
+    margin: 1rem auto;
+    padding: 40px 30px !important;
+    font-size: 0.9rem;
+  }
+
+  .foo {
+    display: none !important;
+  }
+
+  /* about-us section */
+  .bnn1 {
+    display: block !important;
+  }
+
+  .bnn2 {
+    display: none !important;
+  }
+
+
+
+}
+
+@media (max-width: 766px) {
+
+  /* project section */
+  .pro {
+    margin-top: 35px !important;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .R2 h3 {
+    text-align: center;
+    font-size: 49px;
+  }
+
+  .R2 {
+    text-align: center;
+  }
+
+  .bnn1 img,
+  .bnn3 img {
+    width: 280px;
+  }
+
+  .tet {
+    width: 280px;
+  }
+
+  .tet h4 {
+    font-size: 18px;
+  }
+
+
+  .img-col {
+    transition: none;
+    /* add transition effect */
+    width: 280px !important;
+    margin-bottom: 25px;
+
+  }
+
+  .img-col:hover {
+    transform: none;
+    /* enlarge on hover */
+  }
+
+  .img-col:not(:hover) {
+    transform: none;
+    /* reduce size when not hovered */
+  }
+
+  .gnn {
+    justify-content: center !important;
+  }
+
+
+
+
+  #footer {
+    display: none !important;
+  }
+
+}
+
+/* Donation section */
+
+
+/* 
+@media (max-width: 576px) {
+  #about-us {
+    margin-top: 30px !important;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+  }
+
+  .fs-2 {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+
+  .line {
+    width: 30%;
+  }
+} */

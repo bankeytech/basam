@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog-single</title>
   <link rel="stylesheet" href="./asset/style.css">
+  <link rel="stylesheet" href="./asset/mobile.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -22,7 +23,103 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Shippori+Mincho:wght@400;500;600;700;800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
+  <style>
+/* Mobile-first responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav li {
+    padding: 5px 0;
+  }
+  .navbar-nav li a {
+    float: none;
+    font-size: 16px;
+  }
+  .btn-hover {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .H1 h4 {
+    font-size: 32px;
+  }
+  .X1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  .ink {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  .ink::-webkit-scrollbar {
+    display: none;
+  }
+  .fam {
+    font-size: 24px !important;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-brand img {
+    max-width: 120px;
+  }
+  .H1 h4 {
+    font-size: 28px;
+  }
+  .X1 {
+    font-size: 24px;
+  }
+  .fam {
+    font-size: 20px !important;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar-nav li a {
+    font-size: 16px;
+  }
+  .H1 h4 {
+    font-size: 36px;
+  }
+  .X1 {
+    font-size: 32px;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* General responsive improvements */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+</style>
+</head>
 <body >
 
   <!-- navigation -->
@@ -30,7 +127,7 @@
   <section id="nav-bar">
 
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid"  style="padding-left: 8rem; padding-right: 6rem;">
+      <div class="container-fluid px-3 px-lg-5" >
 
               <a class="navbar-brand" href="#"><img src="./asset/image/Logo.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
@@ -60,7 +157,7 @@
               </li>
             </ul>
   
-            <div style="margin-left: 3%;">
+            <div class="mt-3 mt-lg-0">
               <a  href="./index.html#Donations">
                 <button 
                 class="btn btn-hover me-2 text-white fw-bold fs-6 px-5 py-2" type="button">
@@ -77,25 +174,25 @@
   
                           <!--Blog-single section-->
    <section id="Blog-single">
-    <div class="nero p-5">
+    <div class="nero p-3 p-md-5">
       <div class="H1 py-4">
         <h4>Basam</h4>
         <h4 style="color: #FFFFFF; font-size: 24px;">Orphan foundation</h4>
-        <div style="padding-left: 3%; padding-right: 30%; padding-top: 5%; padding-bottom: 3%;">
+        <div class="py-3 py-md-5">
         <h1 class="X1 text-white">We’ve reached 1 million in donations & counting</h1>
         </div>
       </div>
     </div>
 
-    <div class="mx-5 p-5" >
-      <div class="ink">
+    <div class="container-fluid px-3 px-lg-4" >
+      <div class="ink my-4">
         <a href="#">Home <span class="px-1 fw-bold ">></span></a>
         <a href="#">Resources  <span class="px-1 fw-bold ">></span></a>
         <a href="#">Blog  <span class="px-1 fw-bold ">></span></a>
         <a href="#" style="color: #FFA500;">1 Million Donations </a>
       </div>
 
-      <div class="m-5 py-3 px-5">
+      <div class="py-4">
         <div class="container">
           <div class="py-3">
             <p>
@@ -125,17 +222,19 @@
             </div>
           </div>
   
-          <div class="p-5 my-5" style="background-color: #FFA500;">
-           <div class="p-5 text-center text-white">
-            <img src="./asset/image/ivon.png" class="img-fluid">
-            <h5 class="p-4" style="font-style: italic;">
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              
-            </h5>
-
-           </div>
+          <div class="testimonial-card my-5">
+            <div class="text-center position-relative p-4 p-md-5" style="background: linear-gradient(135deg, #FFA500, #FF8C00);border-radius: 12px;box-shadow: 0 4px 15px rgba(255, 165, 0, 0.2);">
+              <img src="./asset/image/ivon.png" class="img-fluid mb-4" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid #ffffff;">
+              <h5 class="testimonial-text fw-light mb-4" style="font-style: italic; line-height: 1.6; color: #ffffff; font-size: 1.1rem;">
+                Qorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h5>
+              <div class="testimonial-author" style="color: #ffffff;">
+                <h6 class="fw-bold mb-1">John Smith</h6>
+                <small>Regular Donor</small>
+              </div>
+            </div>
           </div>
   
           <div>
@@ -157,11 +256,11 @@
             
           </div>
   
-          <div class="d-flex p-5 my-5" style="background-color: #F5F5DC;">
-            <div class="">
+          <div class="d-flex flex-column flex-md-row p-3 p-md-5 my-5" style="background-color: #F5F5DC;">
+            <div class="mb-3 mb-md-0">
               <img src="./asset/image/Imageb.png" class="img-fluid w-auto">
             </div>
-            <div class="gbg mx-4">
+            <div class="gbg mx-0 mx-md-4">
               <h4 class="fam fw-bold">Sodiq Eniola</h4>
               <p class="p-0 m-0">Donator</p>
               <p class="p-0 m-0">
